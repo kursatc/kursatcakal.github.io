@@ -1,0 +1,331 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>KURSAT CAKAL</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/kc.png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/social-circles.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/color/color_4.css" id="theme-color">
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body class="header-v2">
+
+
+
+    <div class="top">
+        <!-- Header -->
+        <header class="header">
+
+            <!-- Logotype -->
+            <p style="font-family:batmanForever2; font-size:23px;" class="header-logo">
+                <a href="index.html" style="font-family:batmanForever; font-size:23px;">
+
+                    KURSAT
+                </a>
+                CAKAL
+            </p>
+
+            <!-- Topmenu Toggle -->
+            <div class="mainmenu-btn" id="mainmenu-btn">
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+            </div>
+
+            <!-- Search Form -->
+            <div class="header-search">
+                <a href="#" id="header-search-btn" class="header-search-btn"><i class="fa fa-search"></i></a>
+                <form action="#" id="header-search">
+                    <input type="text" placeholder="Search..">
+                    <button style="color:rgba(245, 255, 0, 0.70)" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+        </header>
+        <!-- Header -->
+        <!-- Slider -->
+      
+        <!-- Slider -->
+    </div>
+
+
+
+    <!-- Navmenu -->
+    <div class="mainmenu-bg" id="mainmenu-bg"></div>
+    <nav class="mainmenu" id="mainmenu">
+        <ul>
+            <li style="font-family:batmanForever;">
+                <a href="index.html">Home <i class=""></i></a>
+            </li>
+            <li class="mainmenu-parent active" style="font-family:batmanForever;">
+                <a href="index.html">Blog <i class="fa fa-angle-down"></i></a>
+                <ul class="mainmenu-mega-menu">
+                    <li class="mainmenu-parent">
+                        <a href="index.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <a href="kursatcakal.azurewebsites.net">YÖNETİCİ PANEL</a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mainmenu-parent" style="font-family:batmanForever;">
+                <a href="index.html">About <i class="fa fa-angle-down"></i></a>
+                <ul>
+                    <li>
+                        <a href="CV.html">CV<i class="icon-dribbble"></i></a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- Navmenu -->
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Blog Sections -->
+        <div class="cont blog-sections-wrap" id="blog-sections">
+            <div class="blog-sections-inner">
+                <ul class="blog-sections">
+                    <li class="active">
+                        <a href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Science</a>
+                    </li>
+                    <li>
+                        <a href="#">Deep Learning</a>
+                    </li>
+                    <li>
+                        <a href="#">Robotic</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Vision</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Blog Sections -->
+        <div class="cont">
+            <div class="post">
+
+                <!-- Post Content -->
+                <div class="post-info">
+                    <time datetime="2016-05-01 15:15">
+                        <span>3</span>
+                        April
+                    </time>
+                    <a href="#">Kategori : Yazılım</a>
+                    <h1>Xamarin Android Phone Debug</h1>
+                </div>
+                <!-- Post Content -->
+                <p>
+
+                Xamarin cross-platform uygulamalarını windows,android ve ios simulatorlerde derleyerek test edebiliyoruz.
+Ancak bu durumu telefonumuzda yapıp daha izlenebilir bir yapıya sahip olabiliriz.
+Windows phone , iphone ve android cihazlar olmak üzere her birinde ayrı ayrı bu yapıya sahip olabiliriz.
+Bu makalemde ben anroid bir cihaz üzerinde bunu nasıl yapacağımızı ele alacağım.
+Xamarin.Android'i bir Android cihazda Xamarin Studio veya Visual Studio'yu kullanarak debug etmek mümkündür.
+Öncelikle development işlemini gerçekleştirebilmek için cihazımızı bilgisayarımıza kurmamız gerekmekte.
+
+Bu kurulum işlemi için 3 temel adım mevcut:<br><br>
+
+1-Aygıtta Geliştirici Modu Etkinleştirmek:Varsayılan olarak, uygulamaları bir Android cihazda debug etmek mümkün olmayacaktır.<br><br>
+
+2-USB Sürücülerini Yükle:Windows bilgisayarları,cihaza özel USB sürücülerinin yüklenmesini gerektirmektedir.<br><br>
+
+3-Aygıtı Bilgisayara Bağlayın:Son adım, aygıtı bilgisayara USB veya WiFi ile bağlamayı içerir.<br><br>
+
+Adım 1:
+Bu adımda android telefonumuzda ayarlar bölümünde 'Telefon Hakkında' yı seçerek.
+
+<img height="450px" width="270px" src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/1.png">
+
+En alttaki 'derleme numarası' bir diğer deyişle 'build number' ı buluyoruz.
+
+<img height="450px" width="270px" src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/2.png">
+
+Burası 'geliştirici mod' seçeneceğini bizim için aktifleştiren komut butonu yani android'in mayasında bu işlemi aktifleştirmek bu şekilde belirlenmiş.
+Derleme numarası etiketine ard arda tıklayarak (bu cihazdan cihaza değişebilir) geliştirici modu aktifleştireceğiz.
+Örneğin ben aktive ettiğim için cihaz artık beni bir geliştiric olarak görüyor ve izin vermiyor.<br>
+<img height="450px" width="270px" src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/3.png"><br>
+USB debugging seçeneğini telefon ile derleme işlemini gerçekleştirmek için aktifleştiriyoruz.<br>
+Artık ayarlar menümüze Developer Mode etiketi eklendi.<br>
+<img height="450px" width="270px" src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/7.png"> 
+Adım2:
+
+Android SDK manager sayesinde gerekli driver'ları yükliyeceğiz.<br>
+Gereksiz yükleme yapmak istemiyorsanız lütfen sadece 'Google USB Driver package' in seçili olduğundan emin olun işlem için bu yükleme yeterli olacak.
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/1-2.png"> 
+Kurulumu gerçekleştirdikten sonra "C:\Program Files (x86)\Android\android-sdk\extras\google\usb_driver" yolunu kontrol ediniz.
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/2-2.png">  
+ŞEKLİNDE DOSYA İÇERİĞİ OLMASI GEREKİR.<br><br>
+
+Adım3:<br>
+
+Geriye sadece bilgisayarımıza telefonu bağlayarak cihaz kurulumunu yüklemiş olduğumuz Google Usb Driver yolu ile özdeşleştirmek kaldı.<br>
+-Aygıtınızı bir USB kablosuyla bilgisayara bağlayın.<br>
+-Masaüstünden veya Windows Gezgini'nden Bilgisayar'ı sağ tıklatın ve Yönet'i seçin.<br>
+-Sol bölmedeki Aygıt Yöneticisini seçin.<br>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/3-2.png"> <br>
+-Taşınabilir Aygıtlar ya da Diğer Cihazlar bölmelerinden bağlı cihazımıza sağ tıklayıp sürücüyü güncelleştir diyoruz.<br>
+-Karşımıza çıkan pencereden Sürücü Yazılımı İçin Bilgisayarı Tara diyerek.<br>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/4-2.png"> <br>
+-Daha önce Google Usb Driver yüklediğimiz yolu karşımızda açılan penceredeki textbox'a girerek yüklemiş olduğumuz usb driver ile telefonumuzu özdeşleştiriyoruz.<br>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/5-2.png"> <br>
+-USB bağlantısı için işlemlerimiz bu kadar Wifi ile de bu olayları yapmak mümkün(TCP portlarını kullanarak IP adresi configurasyonu yapmamız gerekli).<br>
+
+
+Visual Studio ile cihaz bağlantısı<br>
+Artık projemizi açtığımızda Output kısmında Xamarin Diagnostics de cihazın tanınmasıyla ilgili değişiklikler mevcut olmalı.<br>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMAR%C4%B0N_DEBUG_ON_DEV%C4%B0CE/VS-1.png"/>
+
+Artık debug işlemimizi cihazımız ile gerçekleştirebiliyoruz.<br>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Xamarin/master/XAMARİN_DEBUG_ON_DEVİCE/VS-2.png"/>
+
+
+
+
+
+                
+                </p>
+                <!-- Post Content -->
+
+                <div class="post-comments">
+                    <h3>Yorumlar</h3>
+                    <ul>
+                        <li class="post-comment">
+                            <p align="center" class="post-comment-img">
+                                <img src="img/ava-placeholder.jpg" alt="">
+                            </p>
+                            <!--<h4>Steve Ellis</h4>
+                            <time datetime="2016-05-01 15:15">24 Jun 2016 / 12 45</time>-->
+                            <p>
+                                YORUM YOK
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Post Comments -->
+
+            </div>
+        </div>
+
+
+    </main>
+    <!-- Main Content -->
+    <!-- Footer -->
+    <footer class="footer-wrap">
+        <div class="cont footer">
+
+            <!-- Logotype -->
+
+            <p align="center" class="" style="font-family:batmanForever; color:white; font-size:33px;"> KURSAT CAKAL </p><br /><br />
+
+            <!-- Subscribe -->
+            <form class="form-validate footer-subscribe" action="#">
+                <input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email2">
+                <button type="submit">Subscribe <i class="fa fa-angle-right"></i></button>
+            </form>
+
+
+            <!-- Social Links -->
+            <ul class="footer-social">
+
+
+                <li>
+                    <a href="https://www.linkedin.com/in/kursat-cakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kursat-cakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/kursadcakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/kursadcakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KursatCAKAL" rel="nofollow" target="_blank">
+                        <i class="icon-github social-button color"></i>
+                        <!--<i style="font-family:batmanForever">Github</i>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="kursatckl@gmail.com" rel="nofollow" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                        <!--<i style="font-family:batmanForever">Github</i>-->
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/fancybox/fancybox.js"></script>
+    <script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.fractionslider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        "use strict";
+        function initialize() {
+            var mapOptions = {
+                zoom: 15,
+                scrollwheel: false,
+                center: new google.maps.LatLng(40.440128, -79.974326)
+            };
+            var map = new google.maps.Map(document.getElementById('blog-map1'),
+                mapOptions);
+            var marker = new google.maps.Marker({
+                position: map.getCenter(),
+                icon: 'img/marker.png',
+                map: map
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</body>
+</html>

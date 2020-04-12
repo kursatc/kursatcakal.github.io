@@ -1,0 +1,384 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>KURSAT CAKAL</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/kc.png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/social-circles.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/color/color_4.css" id="theme-color">
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body class="header-v2">
+
+
+
+    <div class="top">
+        <!-- Header -->
+        <header class="header">
+
+            <!-- Logotype -->
+            <p style="font-family:batmanForever2; font-size:23px;" class="header-logo">
+                <a href="index.html" style="font-family:batmanForever; font-size:23px;">
+
+                    KURSAT
+                </a>
+                CAKAL
+            </p>
+
+            <!-- Topmenu Toggle -->
+            <div class="mainmenu-btn" id="mainmenu-btn">
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+            </div>
+
+            <!-- Search Form -->
+            <div class="header-search">
+                <a href="#" id="header-search-btn" class="header-search-btn"><i class="fa fa-search"></i></a>
+                <form action="#" id="header-search">
+                    <input type="text" placeholder="Search..">
+                    <button style="color:rgba(245, 255, 0, 0.70)" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+        </header>
+        <!-- Header -->
+        <!-- Slider -->
+
+        <!-- Slider -->
+    </div>
+
+
+
+    <!-- Navmenu -->
+    <div class="mainmenu-bg" id="mainmenu-bg"></div>
+    <nav class="mainmenu" id="mainmenu">
+        <ul>
+            <li style="font-family:batmanForever;">
+                <a href="index.html">Home <i class=""></i></a>
+            </li>
+            <li class="mainmenu-parent active" style="font-family:batmanForever;">
+                <a href="index.html">Blog <i class="fa fa-angle-down"></i></a>
+                <ul class="mainmenu-mega-menu">
+                    <li class="mainmenu-parent">
+                        <a href="index.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <a href="kursatcakal.azurewebsites.net">YÖNETİCİ PANEL</a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mainmenu-parent" style="font-family:batmanForever;">
+                <a href="index.html">About <i class="fa fa-angle-down"></i></a>
+                <ul>
+                    <li>
+                        <a href="CV.html">CV<i class="icon-dribbble"></i></a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- Navmenu -->
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Blog Sections -->
+        <div class="cont blog-sections-wrap" id="blog-sections">
+            <div class="blog-sections-inner">
+                <ul class="blog-sections">
+                    <li class="active">
+                        <a href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Science</a>
+                    </li>
+                    <li>
+                        <a href="#">Deep Learning</a>
+                    </li>
+                    <li>
+                        <a href="#">Robotic</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Vision</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Blog Sections -->
+        <div class="cont">
+            <div class="post">
+
+                <!-- Post Content -->
+                <div class="post-info">
+                    <time datetime="2016-05-01 15:15">
+                        <span>15</span>
+                        May
+                    </time>
+                    <a href="#">Kategori : Bilgisayar Bilimleri</a>
+                    <h1>C# Array Pointing</h1>
+                </div>
+                <p>
+
+                   
+                   Nesne yönelimli programlama ile pointer yapısının program execute olduktan sonra biz "dizi" veri yapısının elemanlarının nasıl eklendiği ve bütün elemanların nasıl olur da son elemana eşit olduğu problemiyle karşı karşıya geldiysen bu makale sizin için yararlı olacaktır. Öncelikle class içeriğimiz aşşağıda ki gibi olsun. Burada Eleman adlı dizimize degerler ekliyoruz.<div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Program</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">randomElemanSayisi;</span>
+        <span style="color: #66d9ef">static</span> <span style="color: #f8f8f2">Random</span> <span style="color: #f8f8f2">rnd</span> <span style="color: #f8f8f2">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Random();</span>
+        <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">Main</span><span style="color: #f8f8f2">(</span><span style="color: #66d9ef">string</span><span style="color: #f8f8f2">[]</span> <span style="color: #f8f8f2">args)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">randomElemanSayisi</span> <span style="color: #f8f8f2">=</span> <span style="color: #f8f8f2">rnd.Next(</span><span style="color: #ae81ff">10</span><span style="color: #f8f8f2">);</span>
+
+            <span style="color: #f8f8f2">Eleman[]</span> <span style="color: #f8f8f2">elemanUretilen</span> <span style="color: #f8f8f2">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Eleman[randomElemanSayisi];</span>
+            
+            <span style="color: #f8f8f2">Eleman</span> <span style="color: #f8f8f2">elemanEklenecek</span> <span style="color: #f8f8f2">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Eleman();</span>
+            <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f8f8f2">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f8f8f2">&lt;</span> <span style="color: #f8f8f2">randomElemanSayisi;</span> <span style="color: #f8f8f2">i++)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">elemanEklenecek.Deger</span> <span style="color: #f8f8f2">=</span> <span style="color: #ae81ff">11</span> <span style="color: #f8f8f2">+</span> <span style="color: #f8f8f2">rnd.Next(</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">);</span>
+
+                <span style="color: #f8f8f2">elemanEklenecek.LinkAddress</span> <span style="color: #f8f8f2">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+
+                <span style="color: #f8f8f2">elemanEklenecek.HomeAddress</span> <span style="color: #f8f8f2">=</span> <span style="color: #f8f8f2">elemanEklenecek.Deger</span> <span style="color: #f8f8f2">%</span> <span style="color: #ae81ff">11</span><span style="color: #f8f8f2">;</span>
+                <span style="color: #f8f8f2">Console.WriteLine(</span><span style="color: #e6db74">&quot;Anlık Tekil Elemanın Degeri=&quot;</span><span style="color: #f8f8f2">+elemanEklenecek.Deger);</span>
+                <span style="color: #f8f8f2">Console.WriteLine(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">);</span>
+                <span style="color: #f8f8f2">elemanUretilen[i]</span> <span style="color: #f8f8f2">=</span> <span style="color: #f8f8f2">elemanEklenecek;</span>
+                
+                <span style="color: #f8f8f2">Console.WriteLine(</span><span style="color: #e6db74">&quot;Anlık Dizi Elemanın Degeri=&quot;</span><span style="color: #f8f8f2">+elemanUretilen[i].Deger);</span>
+                <span style="color: #f8f8f2">Console.WriteLine(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">);</span> <span style="color: #f8f8f2">Console.WriteLine(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">);</span>
+            <span style="color: #f8f8f2">}</span>
+            <span style="color: #f8f8f2">Console.WriteLine(</span><span style="color: #e6db74">&quot;------------&quot;</span><span style="color: #f8f8f2">);</span>
+            <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f8f8f2">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f8f8f2">&lt;</span> <span style="color: #f8f8f2">randomElemanSayisi;</span> <span style="color: #f8f8f2">i++)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">Console.WriteLine(elemanUretilen[i].Deger);</span>
+            <span style="color: #f8f8f2">}</span>
+            <span style="color: #f8f8f2">Console.ReadKey();</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+</pre></div>
+
+<br><p>
+Eleman adlı nesne:</p>
+<br>
+<div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"> <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Eleman</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">Deger</span> <span style="color: #f8f8f2">{</span> <span style="color: #66d9ef">get</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">set</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">}</span>
+        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">HomeAddress</span> <span style="color: #f8f8f2">{</span> <span style="color: #66d9ef">get</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">set</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">}</span>
+        <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">LinkAddress</span> <span style="color: #f8f8f2">{</span> <span style="color: #66d9ef">get</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">set</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+</pre></div>
+<p>
+<br>
+<p>Çıktı:</p><br>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Anlık Tekil Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">291</span>
+
+Anlık Dizi Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">291</span>
+
+
+Anlık Tekil Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">26</span>
+
+Anlık Dizi Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">26</span>
+
+
+Anlık Tekil Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">138</span>
+
+Anlık Dizi Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">138</span>
+
+
+Anlık Tekil Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">221</span>
+
+Anlık Dizi Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">221</span>
+
+
+Anlık Tekil Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">186</span>
+
+Anlık Dizi Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">186</span>
+
+
+Anlık Tekil Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">101</span>
+
+Anlık Dizi Elemanın Degeri=<span style="color: #6600EE; font-weight: bold">101</span>
+
+
+------------
+<span style="color: #6600EE; font-weight: bold">101</span>
+<span style="color: #6600EE; font-weight: bold">101</span>
+<span style="color: #6600EE; font-weight: bold">101</span>
+<span style="color: #6600EE; font-weight: bold">101</span>
+<span style="color: #6600EE; font-weight: bold">101</span>
+<span style="color: #6600EE; font-weight: bold">101</span>
+</pre></div>
+
+<p>Şimdi asıl meseleye gelelim: Neden aslında nesnenin her indisine o an eklemesini istediğim değeri eklemesine rağmen en sonunda random bir dizi içeriği elde etmeyi amaçladığım dizinin bütün elemanları aynı oluyor?</p>
+
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/C-SHARP%20ARRAY%20OBJECT%20POINTING%20ISSUE/1.png"><br>
+
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/C-SHARP%20ARRAY%20OBJECT%20POINTING%20ISSUE/2.png"><br>
+
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/C-SHARP%20ARRAY%20OBJECT%20POINTING%20ISSUE/3.png"><br>
+<br>
+
+<p>Aslına baktığımızda elemanUretilien adlı listemize adım adım indisler doğru bir şekilde yerleştirilse de bizim point ettiğimiz elemanEklenecek elemanının memory'de değeri değiştiği için ve son durumunda bütün dizi elemanları burayı point ettiği için böyle bir durum söz konusu oluyor.
+
+Çözüm: <br></p>
+<div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">  <span style="color: #f8f8f2">class</span> <span style="color: #f8f8f2">Program</span>
+    <span style="color: #f8f8f2">{</span>
+        <span style="color: #f8f8f2">static</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">randomElemanSayisi;</span>
+        <span style="color: #f8f8f2">static</span> <span style="color: #f8f8f2">Random</span> <span style="color: #f8f8f2">rnd</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Random</span><span style="color: #f8f8f2">();</span>
+        <span style="color: #f8f8f2">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">Main</span><span style="color: #f8f8f2">(string[]</span> <span style="color: #f8f8f2">args)</span>
+        <span style="color: #f8f8f2">{</span>
+            <span style="color: #f8f8f2">randomElemanSayisi</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">rnd.</span><span style="color: #a6e22e">Next</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">);</span>
+
+            <span style="color: #f8f8f2">Eleman[]</span> <span style="color: #f8f8f2">elemanUretilen</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Eleman[randomElemanSayisi];</span>
+
+            <span style="color: #75715e">// Eleman elemanEklenecek = new Eleman();</span>
+            <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">randomElemanSayisi;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">Eleman</span> <span style="color: #f8f8f2">elemanEklenecek</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #a6e22e">Eleman</span><span style="color: #f8f8f2">();</span>
+                <span style="color: #f8f8f2">elemanEklenecek.Deger</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">11</span> <span style="color: #f92672">+</span> <span style="color: #f8f8f2">rnd.</span><span style="color: #a6e22e">Next</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">300</span><span style="color: #f8f8f2">);</span>
+
+                <span style="color: #f8f8f2">elemanEklenecek.LinkAddress</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span>
+
+                <span style="color: #f8f8f2">elemanEklenecek.HomeAddress</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">elemanEklenecek.Deger</span> <span style="color: #f92672">%</span> <span style="color: #ae81ff">11</span><span style="color: #f8f8f2">;</span>
+                <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Anlık Tekil Elemanın Degeri=&quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">elemanEklenecek.Deger);</span>
+                <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">);</span>
+                <span style="color: #f8f8f2">elemanUretilen[i]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">elemanEklenecek;</span>
+                
+                <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;Anlık Dizi Elemanın Degeri=&quot;</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">elemanUretilen[i].Deger);</span>
+                <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">);</span> <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">);</span>
+            <span style="color: #f8f8f2">}</span>
+            <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;------------&quot;</span><span style="color: #f8f8f2">);</span>
+            <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">randomElemanSayisi;</span> <span style="color: #f8f8f2">i</span><span style="color: #f92672">++</span><span style="color: #f8f8f2">)</span>
+            <span style="color: #f8f8f2">{</span>
+                <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">WriteLine</span><span style="color: #f8f8f2">(elemanUretilen[i].Deger);</span>
+            <span style="color: #f8f8f2">}</span>
+            <span style="color: #f8f8f2">Console.</span><span style="color: #a6e22e">ReadKey</span><span style="color: #f8f8f2">();</span>
+        <span style="color: #f8f8f2">}</span>
+    <span style="color: #f8f8f2">}</span>
+</pre></div>
+<br>
+<h6> Çözümün dez avantajı döngü içinde her tekrarda nesnenin oluşturulması için performans kaybı olmasıdır.</h6>
+
+
+
+                </p>
+
+
+            </div>
+        </div>
+
+
+    </main>
+    <!-- Main Content -->
+    <!-- Footer -->
+    <footer class="footer-wrap">
+        <div class="cont footer">
+
+            <!-- Logotype -->
+
+            <p align="center" class="" style="font-family:batmanForever; color:white; font-size:33px;"> KURSAT CAKAL </p><br /><br />
+
+            <!-- Subscribe -->
+            <form class="form-validate footer-subscribe" action="#">
+                <input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email2">
+                <button type="submit">Subscribe <i class="fa fa-angle-right"></i></button>
+            </form>
+
+
+            <!-- Social Links -->
+            <ul class="footer-social">
+
+
+                <li>
+                    <a href="https://www.linkedin.com/in/kursat-cakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kursat-cakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                  <li>
+                    <a href="https://www.twitter.com/kursadcakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/kursadcakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KursatCAKAL" rel="nofollow" target="_blank">
+                        <i class="icon-github social-button color"></i>
+                        <!--<i style="font-family:batmanForever">Github</i>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="kursatckl@gmail.com" rel="nofollow" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                        <!--<i style="font-family:batmanForever">Github</i>-->
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/fancybox/fancybox.js"></script>
+    <script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.fractionslider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        "use strict";
+        function initialize() {
+            var mapOptions = {
+                zoom: 15,
+                scrollwheel: false,
+                center: new google.maps.LatLng(40.440128, -79.974326)
+            };
+            var map = new google.maps.Map(document.getElementById('blog-map1'),
+                mapOptions);
+            var marker = new google.maps.Marker({
+                position: map.getCenter(),
+                icon: 'img/marker.png',
+                map: map
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</body>
+</html>

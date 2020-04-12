@@ -1,0 +1,338 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>KURSAT CAKAL</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic,300italic,300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="img/kc.png" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/social-circles.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/color/color_4.css" id="theme-color">
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body class="header-v2">
+
+
+
+    <div class="top">
+        <!-- Header -->
+        <header class="header">
+
+            <!-- Logotype -->
+            <p style="font-family:batmanForever2; font-size:23px;" class="header-logo">
+                <a href="index.html" style="font-family:batmanForever; font-size:23px;">
+
+                    KURSAT
+                </a>
+                CAKAL
+            </p>
+
+            <!-- Topmenu Toggle -->
+            <div class="mainmenu-btn" id="mainmenu-btn">
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+                <div class="mainmenu-btn-line"></div>
+            </div>
+
+            <!-- Search Form -->
+            <div class="header-search">
+                <a href="#" id="header-search-btn" class="header-search-btn"><i class="fa fa-search"></i></a>
+                <form action="#" id="header-search">
+                    <input type="text" placeholder="Search..">
+                    <button style="color:rgba(245, 255, 0, 0.70)" type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+
+        </header>
+        <!-- Header -->
+        <!-- Slider -->
+
+        <!-- Slider -->
+    </div>
+
+
+
+    <!-- Navmenu -->
+    <div class="mainmenu-bg" id="mainmenu-bg"></div>
+    <nav class="mainmenu" id="mainmenu">
+        <ul>
+            <li style="font-family:batmanForever;">
+                <a href="index.html">Home <i class=""></i></a>
+            </li>
+            <li class="mainmenu-parent active" style="font-family:batmanForever;">
+                <a href="index.html">Blog <i class="fa fa-angle-down"></i></a>
+                <ul class="mainmenu-mega-menu">
+                    <li class="mainmenu-parent">
+                        <a href="index.html">Blog <i class="fa fa-angle-down"></i></a>
+                        <ul>
+                            <a href="kursatcakal.azurewebsites.net">YÖNETİCİ PANEL</a>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="mainmenu-parent" style="font-family:batmanForever;">
+                <a href="index.html">About <i class="fa fa-angle-down"></i></a>
+                <ul>
+                    <li>
+                        <a href="CV.html">CV<i class="icon-dribbble"></i></a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- Navmenu -->
+    <!-- Main Content -->
+    <main>
+
+
+        <!-- Blog Sections -->
+        <div class="cont blog-sections-wrap" id="blog-sections">
+            <div class="blog-sections-inner">
+                <ul class="blog-sections">
+                    <li class="active">
+                        <a href="#">Posts</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Science</a>
+                    </li>
+                    <li>
+                        <a href="#">Deep Learning</a>
+                    </li>
+                    <li>
+                        <a href="#">Robotic</a>
+                    </li>
+                    <li>
+                        <a href="#">Computer Vision</a>
+                    </li>
+                    <li>
+                        <a href="#">Other</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Blog Sections -->
+        <div class="cont">
+            <div class="post">
+
+                <!-- Post Content -->
+                <div class="post-info">
+                    <time datetime="2016-05-01 15:15">
+                        <span>20</span>
+                        Jun
+                    </time>
+                    <a href="#">Kategori : Bilgisayar Bilimleri</a>
+                    <h1>Multiproccessor Architecture</h1>
+                </div>
+                <p>
+
+                    Çok işlemcili mimarileri anlatacağım bu yazı da öncelikle çok işlemcili bir mimarilerin nasıl çalıştığını anlamak adına bu mimarilerde çoklu işlemin nasıl yapıldığı ve bilgisayarda çok işlemcili çalışma prensibi nedir kısaca bu konuya değineceğim. Ardından çok işlemci yapısına sahip bilgisayar mimarilerinin çeşitlerini ve sınıflandırmalarını yapacağım. Bu sınıflandırmayı yaparken cache, process management ve multi core başlıkları ekseninde değerlendirmelerimi yapacağım.<br>
+<h3>Çok İşlemcili Mimariler</h3><br> <p>
+Bilgisayar sistemlerindeki performansın iyileştirmek bazı durumlarda erişilebilirlik özelliğini arttırmak amacıyla çok sayışa işlevsel birimin (ALU,PC,Memory,Floating-Point,vb.) paralel olarak çalıştırılır. Temelinde tam da bu mantık olan çok işlemcili mimarilerde aynı bilgisayar sistemi içerisinde 2 ya da daha fazla CPU kullanılarak performansı ve erişilebilirliği arttırmak amaçlanır. Bir sistemin birden fazla işlemciyi destekleyebileceğini veya aralarında görev tahsis edebilme yeteneği de bu durumla alakalıdır. Performans artışı işlem havuzundaki işlemlerin farklı işlem ünitelerine dağıtılmasıyla gerçekleştirilir. Kısaca özetleyecek olursak çok işlemcili mimariye sahip bilgisayar sistemleri aynı ana bellek ve çevre birimlerini paylaşabilen iki veya daha fazla işlem birimi bulunduran bu CPU’lar için farklı cache belleklerin kullanılabildiği bilgisayar sistemleridir ve birden fazla işlemci aynı işin farklı kısımlarını gerçekleştirebilir. Çoklu işlemcili mimariler çoklu işlem mantığı üzerinden çalışır ve çoklu işlem simetrik ve asimetrik olarak iki başlıkta incelenir.<br>
+• Simetrik çoklu işlem (SMP), iki veya daha fazla özdeş işlemcinin tek bir paylaşılan ana belleğe bağlandığı, tüm giriş ve çıkış aygıtlarına tam erişime sahip olduğu ve işleyen tek bir işletim sistemi örneği tarafından denetlendiği çok işlemci yapısıdır. Çok işlemcili bir bilgisayar donanımı ve yazılım mimarisi açısından tüm işlemcileri eşit, özel amaçlı olarak hiçbir şey ayırmadan kullanır.<br> 
+• Asimetrik çoklu işlem (AMP) , tüm CPU'lar eşit muamele görmez. Örneğin ilk CPU; donanım veya işletim sistemi düzeyinde bir sistem CPU’nun sistem kodunu çalıştırmasına ya da CPU’nun I/O işlemlerini gerçekleştirmesine izin verebilir, ikinci herhangi bir CPU'nun hem işletim sistemi kodunu çalıştırmasına hemde I / O işlemlerini gerçekleştirmesine izin verir. Böylece işlemci rolleri açısından simetrik olur, ancak bazı veya tüm çevre birimlerini belli CPU'lara bağlar; böylece çevre birimlere göre asimetrik olurlar.<br> </p>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/%C3%87ok%20%C4%B0%C5%9Flemcili%20Mimariler%20(Multiprocessor%20Architecture)/7.png">
+          <br><p>
+Yukarıdaki tabloda 3 GB ‘lık bir database üzerinde yapılan bir deneyde multi processor ve dual-processor sistemlerde elde edilen transaction yani işlem miktarlarını görmekteyiz. Üst düzey süreç işlemlerinde iş yükünü ölçeklendirmek için çok büyük önem arz eden çoklu işlem mimarileri büyük verileri ve süreçleri yönetebilme kabilitine sahiptir. Çoklu işleme, iki veya daha fazla işlemcinin bir araya getirilerek, işlenmesi gereken buyruğun daha hızlı bir şekilde işlenmesini sağlamaya yönelik bir tasarımdır. <br>
+          </p>
+<br>
+
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/%C3%87ok%20%C4%B0%C5%9Flemcili%20Mimariler%20(Multiprocessor%20Architecture)/2-3-mix.png">
+
+<h3>Çok İşlemcili Mimarilerin Sınıflandırılması</h3><br>  <p>
+Şemamızda görüldüğü üzere mikro işlemciler farklı başlıklarda komut ve veri yönetimlerine göre ayrılmaktadırlar. Biz çok işlemcili mimari yapıya sahip olan ve temelde iki başlıkta sınıflandırılmış olan MIMD başlığı altıdaki Tightly Coupled ve Loosely Coupled başlıklarını inceleyeceğiz.</p>
+          <img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/%C3%87ok%20%C4%B0%C5%9Flemcili%20Mimariler%20(Multiprocessor%20Architecture)/3.png"><br>
+
+<h4>1-)Tightly Coupled Multiprocessor</h4><br> <p>
+TCM işlemci mimarilerindeki sistem aynı bus seviyesinde bağlı çoklu CPU elemanları içermektedir. Bu CPU elemanları merkezi paylaşılan bellek elemanlarına erişebilir yada yerel ve lokal olmak üzere iki tip bellek hiyerarşilerine katılabilirler.TMP işlemci mimarisinin genel özellikleri şu şekildedir. <br>
+• Tek bir fiziksel adres uzayı vardır yani aynı bellek paylaşılır.<br>
+• İşlemciler, ortak bellekteki paylaşılan değişkenler üzerinden iletişim kurarlar.<br>
+• Tüm işlemciler, ortak belleğin tüm alanlarına, komutlar ile erişebilirler.<br>
+• Sistem, tümleşik ortak bir işletim sistemi tarafından kontrol edilir ve işletim sistemi, işlemciler arasındaki etkileşimi, süreç , görev, dosya işlemlerinin yapılmasını sağlar.<br>
+• Paylaşılan değişkenler nedeniyle işletim sistemi, işlemciler arasında senkronizasyonu da desteklemelidir.<br>
+Bu kategoride inceleyeceğimiz 2 alt başlık olacaktır.<br>
+• SMP & UMA<br>
+• NUMA SMP & UMA (Symetric Multiprocessor & Uniform Memory Acces) Çok İşlemciler<br>
+Bellek erişim süresi, hangi adrese erişilirse erişilsin, tüm işlemciler için neredeyse aynıdır. SMP yani simetrik çoklu işleme daha önce değinmiştik. Bu kısımda simetrik çoklu işlem yapan bir işlemci için değerlendirmelerimizi yapacağız. Bu iki sistem hakkındaki değerlendirmelerim şu şekilde;<br>
+• Ortak bir adres uzayını ve tek bir işletim sistemini paylaşırlar.<br>
+• Sistemdeki tüm işlemciler aynı işlevleri yerine getirme yeteneğine sahiptirler.<br>
+• Bütün elemanlar ortak bir güzergah ile birbirlerine bağlıdırlar.<br>
+• İki veya daha fazla sayıda aynı özelliklere sahip işlemci içerirler.<br>
+• Bellek erişim süresi, tüm işlemciler için, yaklaşık olarak aynıdır.<br>
+• İşlemciler ortak bellek yani main memory ve I/O birimlerini paylaşırlar.<br>
+• Erişilebilirlik sağlar yani tüm işlemciler, aynı işlevleri gerçekleştirebilecek yetenekte olduklarından, bir işlemcinin devre dışı kalması, sistemin durmasına neden olmaz.<br>
+• Sistemimize yeni bir işlemci ekleyip performansını artırabilmemiz mümkündür.<br>
+• İşlemci sayısı arttıkça, ortak yolu kullanan işlemler çatışabilir ve performansın düşme ihtimali oluşur.<br></p><br>
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/%C3%87ok%20%C4%B0%C5%9Flemcili%20Mimariler%20(Multiprocessor%20Architecture)/4.png"><br> <p>
+Yukarı şekilde gördüğümüz üzere açıklamakta olduğumuz sistemde her işlemci, kendine ait ALU, kontrol birimi, saklayıcılar ve bir veya daha fazla düzeyli cache bellek içermektedirler. Ana bellek, interleaved veya multiport olabilir.Böylece farklı bloklara, aynı anda erişmek mümkün olur. Ara bağlantı sistemi, ortak yol veya crossbar switch olarak tasarlanabilir. <br><br>
+Sistemimizde avantajlı ve dezavantajlı durumlar mevcuttur. Basitlik, Esneklik ve Güvenilirlik sistemimizin bize sağladığı avantajlar arasındadır. Bu başlığımızda işlemcilerin bellek adresleme modülleri, arayüzleri , zaman paylaşım yöntemleri ve yol paylaşımları tek işlemcili sistemlerdeki gibidir. İşlem sürecine yenilerinin eklenebilmesi oldukça kolaydır fakat kısıtları mevcuttur. Paylaşılan bir yol kullanılıyor olması herhangi bir sürecin sorun ile karşılaşması durumunda tüm sistemin işlemine alı koyulmasını engeller. Performans konusunda dezavantajlı durumlar mevcuttur. Belleğe erişimlerin tamamı ortak yol ile olduğu için ortak olarak tüm sisteme hizmet veren yol çevresi sistem hızını sınırlar. Ortak yol ile işlem yapıldığı esnada bir işlem yolu kullanırken diğer işlemler ana belleğe erişemezler. Bu sorunun çözümü sıkça işlem gören veriler, işlemcilerin yerel cache belleklerinde tutulurarak olur böylece ana belleğe sıkça erişim gereksinimi azaltılmış olur. <br><br>
+<h4>NUMA (Nonuniform Memory Access) Çok İşlemciler</h4><br> <p>
+Bir önceki sistemimizde incelediğimiz ve çözümünü sunduğumuz gibi SMP ‘de performans bizim için bir darboğazdır. Ayrıca işlemci sayısı sınırlıdır. Bu sistemimizin özelliklerini şöyle sıralayabiliriz:<br>
+Özellikleri:<br>
+• Tek Adres Alanı ile paylaşımlı bellek sunar ve tek işletim sistemi üzerindedir.<br>
+• Paylaşılan bellek, fiziksel olarak, memory instruction bufferlara dağıtılır. Bu sistemlere, dağıtılmış
+paylaşımlı bellek sistemleri de denir.<br>
+• Bir MİB, kendi bellek modülüne, diğer modüllerden daha hızlı erişebilir. <br> </p> <br> 
+<img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/%C3%87ok%20%C4%B0%C5%9Flemcili%20Mimariler%20(Multiprocessor%20Architecture)/5.png"><br> <p>
+<h3>2-) Loosely Coupled </h3><br> <p>
+İlk maddemizde değerlendirmiş olduğumuz sıkıca bağlanmış sistemler daha iyi performans göstermesine ve gevşek bağlı sistemlerden fiziksel olarak daha küçük olmasına rağmen. Gevşek bağlı bir sistemdeki düğümler genellikle ucuz eşya bilgisayarlarıdır ve sistemden ayrıldıklarında bağımsız makineler olarak geri dönüştürülebilir. Güç tüketimine bakıldığında tightly coupled sistemler, çok daha fazla enerji verimi sağlayabilirler. Ayrıca gevşek bağlı sistemler, farklı sistemlerde farklı işletim sistemleri veya işletim sistemi sürümleri çalıştırma yeteneğine sahiptirler. Bu sistemin genel özellikleri şu şekildedir: <br>
+• Her işlemci, kendi fiziksel adres alanına sahiptir. <br>
+• Standart ağ donanımları üzerinden birbirlerine bağlı bilgisayarın boyutu, on binlerce sunucuya ve daha fazlasına ulaştığında, depo ölçekli (warehouse-scale) bilgisayarlar (cloud computing) olarak adlandırılırlar. <br>
+• Bu işlemciler, mesaj geçirme yoluyla haberleşir.</p><br> <img src="https://raw.githubusercontent.com/KursatCAKAL/Posts_BackUp/master/%C3%87ok%20%C4%B0%C5%9Flemcili%20Mimariler%20(Multiprocessor%20Architecture)/6.png"> <br> <p>
+Yararları: <br>
+• Bir sistem her biri çok işlemcili olan onlarca, yüzlerce, hatta binlerce makine içerebilir ve sisteme küçük artışlarla, yeni elemanlar eklemek mümkündür bu sayede sistem daha ölçeklenebilir bir yapıda olur. <br>
+• Bir kümedeki her düğüm, bağımsız bir sistemdir bu nedenle, bir süreçteki arıza tüm sistemin kaybı anlamına gelmez. <br>
+• Ucuz, kolayca bulunabilen parçalar kullanarak, büyük hesaplama gücü yüksek bir sistem oluşturmak mümkündür.<br>
+<h3>SONUÇ</h3><br><p>
+Çok işlemcili mimarileri hakkındaki araştırmamda tek işlemcili mimarilerin (işlemci mimarileri şeması resim olarak paylaşılmıştır) ne gibi sorunlara yol açtığı bu sorunlara karşı hangi methodların geliştirildiği yeni geliştirilen methodlardaki özellikler, avantajlar ,dezavantajlar , söz konusu dezavantajların giderilmesi ve performans gibi alt başlıkların detaylıca inceleyerek öğrendik. Çok işlemcili ve tek işlemcili mimarilerde process management , multi core ve cache konularını içeren olay ve sonuçlar hakkında detaylı bilgi edindik. Bilgisayarlı sistemlerde processlerin birden fazla işlemci içerisinde işlenmesi esnasında adres alanının paylaşılması, bellek paylaşımı, komutların bufferlara dağılımı, erişilebilirliğin örnekleri , sistemdeki performans artışları , işlemci sayısı arttıkça ortak yolu kullanan işlemlerin çatışması , iş yükünün ölçeklendirilmesi gibi ne aşamalardan geçerek ne gibi tepkiler ile karşılaşıldığı konusunda araştırmamız sayesinde detaylıca bilgi edindik.<br> </p>
+<h4>KAYNAKLAR</h4><br> <p>
+[1] https://en.0wikipedia.org/wiki/Multiprocessing <br>
+[2] http://ninova.itu.edu.tr/en/courses/faculty-of-computer-and-informatics/22/blg-322/ekkaynaklar?g1044527 <br>
+[3] http://www.wikizero.org/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvQXN5bW1ldHJpY19tdWx0aXByb2Nlc3Npbmc <br>
+[4] http://www.wikizero.org/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU3ltbWV0cmljX211bHRpcHJvY2Vzc2luZw <br>
+[5] http://www.wikizero.org/index.php?q=aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTm9uLXVuaWZvcm1fbWVtb3J5X2FjY2Vzcw <br>
+[6]http://www.eng.auburn.edu/~agrawvd/COURSE/E6200_06/STUDENT_TALKS/Multiprocessor_YChen.ppt <br>
+[7] https://www.slideshare.net/arpanbaishya/multiprocessor-architecture <br>
+[8] http://www.pearsonitcertification.com/articles/article.aspx?p=426771&seqNum=2 <br> </p>
+
+
+<!--<iframe src="https://drive.google.com/file/d/187UHvQ1pOwXcex-v7PJP-xVdeGcWRQCn/preview" width="100%"; height="2080px;"> </iframe>-->
+<iframe src="https://onedrive.live.com/embed?cid=E91F373E6C09F00E&resid=E91F373E6C09F00E%2110682&authkey=AORnAxueiPUFZJk&em=2" width="100%" height="1080" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+                </p>
+
+                <div class="post-comments">
+                    <h3>Yorumlar</h3>
+                    <ul>
+                        <li class="post-comment">
+                            <p align="center" class="post-comment-img">
+                                <img src="img/ava-placeholder.jpg" alt="">
+                            </p>
+                            <!--<h4>Steve Ellis</h4>
+                            <time datetime="2016-05-01 15:15">24 Jun 2016 / 12 45</time>-->
+                            <p>
+                                YORUM YOK
+                            </p>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- Post Comments -->
+
+            </div>
+        </div>
+
+
+    </main>
+    <!-- Main Content -->
+    <!-- Footer -->
+    <footer class="footer-wrap">
+        <div class="cont footer">
+
+            <!-- Logotype -->
+
+            <p align="center" class="" style="font-family:batmanForever; color:white; font-size:33px;"> KURSAT CAKAL </p><br /><br />
+
+            <!-- Subscribe -->
+            <form class="form-validate footer-subscribe" action="#">
+                <input data-required="text" data-required-email="email" type="text" placeholder="Email address" name="email2">
+                <button type="submit">Subscribe <i class="fa fa-angle-right"></i></button>
+            </form>
+
+
+            <!-- Social Links -->
+            <ul class="footer-social">
+
+
+                <li>
+                    <a href="https://www.linkedin.com/in/kursat-cakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/kursat-cakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                  <li>
+                    <a href="https://www.twitter.com/kursadcakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/kursadcakal/" rel="nofollow" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/KursatCAKAL" rel="nofollow" target="_blank">
+                        <i class="icon-github social-button color"></i>
+                        <!--<i style="font-family:batmanForever">Github</i>-->
+                    </a>
+                </li>
+                <li>
+                    <a href="kursatckl@gmail.com" rel="nofollow" target="_blank">
+                        <i class="fa fa-envelope"></i>
+                        <!--<i style="font-family:batmanForever">Github</i>-->
+                    </a>
+                </li>
+
+            </ul>
+
+
+        </div>
+    </footer>
+    <!-- Footer -->
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/fancybox/fancybox.js"></script>
+    <script src="js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.fractionslider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        "use strict";
+        function initialize() {
+            var mapOptions = {
+                zoom: 15,
+                scrollwheel: false,
+                center: new google.maps.LatLng(40.440128, -79.974326)
+            };
+            var map = new google.maps.Map(document.getElementById('blog-map1'),
+                mapOptions);
+            var marker = new google.maps.Marker({
+                position: map.getCenter(),
+                icon: 'img/marker.png',
+                map: map
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+</body>
+</html>
