@@ -618,7 +618,7 @@ body.menu-opened .mainmenu {
     -moz-transition: all 0.2s;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    background: url(img/kapak-TopSlider3.jpg) no-repeat scroll center center;/*transparent;*/
+    background: transparent;/*url(../img/kapak-TopSlider3.jpg) no-repeat scroll center center;*/
     border-radius: 90px 0 90px 0;
 
 
